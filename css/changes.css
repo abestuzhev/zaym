@@ -88,7 +88,7 @@
 .c-stock-preview {
   position: relative;
   display: inline-block;
-  width: 19vw;
+  width: 20vw;
   /*height: 9.01vw;*/
   background-image: linear-gradient(to top, #EDEDED 0%, #FFF 100%);
   border: 1px solid #D7DCDF;
@@ -96,10 +96,10 @@
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
   color: #363636;
   font-family: "Open Sans", sans-serif;
-  font-size: .63vw;
+  font-size: .65vw;
   font-weight: 400;
   padding-bottom: 1vw;
-  margin: .5vw;
+  margin: 0 .2vw;
 }
 
 .c-stock-preview:first-child {

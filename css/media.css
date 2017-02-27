@@ -1,3 +1,12 @@
+@media (max-width: 1600px){
+    .c-stock-preview:nth-child(4){
+        display: none;
+    }
+    .c-stock-preview {
+        width: 20vw;
+    }
+}
+
 @media (max-width: 767px) {
     body {
         font-size: 6vw;
