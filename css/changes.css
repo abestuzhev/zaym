@@ -13,7 +13,8 @@
   margin-left: -0.4vw;
   width: 16.6vw;
 }
-.header .button::before {
+.header .button::before,
+.header .city::before{
   content: '';
   position: absolute;
   width: 1px;
@@ -285,6 +286,14 @@
   border: 1px solid #D8D8D8;
   border-radius: .31vw;
   padding: .52vw .96vw;
+}
+
+.calculation_input .range-value_price {
+  width: 5.25vw;
+}
+
+.calculation_input .range-value_day {
+  idth: 3.43vw;
 }
 
 .calculation_stock {
@@ -657,10 +666,17 @@
 .calculation-view_item input[type=radio]:checked + .calculation-view_label::after {
   content: '';
   background: url("../img/icon-check-white.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 1.04vw;
   height: .98vw;
   position: absolute;
-  top: 34%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 1.24vw;
   transition: all .2s ease-out;
 }

@@ -14,6 +14,9 @@ body {
 .header {
     position: relative;
     z-index: 5;
+    background-color: #44A70E;
+    background-image: linear-gradient(to top, #44A70E 0%, #44A70E 0%, #74CB00 100%);
+    overflow: hidden;
 }
 .header .logo {
   box-sizing: border-box;
@@ -44,30 +47,53 @@ body {
 .header .telephone,
 .header > .button,
 .header .city {
-    background: -moz-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #74cb00), color-stop(47%, #4dae0b), color-stop(100%, #4dae0b)); /* safari4+,chrome */
-    background: -webkit-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* ie10+ */
-    background: linear-gradient(0deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cb00', endColorstr='#4dae0b',GradientType=0 ); /* ie6-9 */
+    /*background: -moz-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); !* ff3.6+ *!*/
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #74cb00), color-stop(47%, #4dae0b), color-stop(100%, #4dae0b)); !* safari4+,chrome *!*/
+    /*background: -webkit-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); !* safari5.1+,chrome10+ *!*/
+    /*background: -o-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); !* opera 11.10+ *!*/
+    /*background: -ms-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); !* ie10+ *!*/
+    /*background: linear-gradient(0deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); !* w3c *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cb00', endColorstr='#4dae0b',GradientType=0 ); !* ie6-9 *!*/
     height: 3.9vw;
 }
+
+
 .header .call_me {
-    height: 3.9vw;
-}
-.header .call_me::before {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    left: 0;
-    background-color: #82d90f;
-    cursor: pointer;
-}
-.header .call_me {
+    height: 3.5vw;
     background-color: #74cb00;
+    float: right;
+    margin-right: 1.1vw;
+    border-bottom-right-radius: .3vw;
+    border-bottom-left-radius: .3vw;
+    padding: .58vw .42vw .42vw .42vw;
 }
+.header .call_me .img {
+    width: 2.4vw;
+    padding: 0.4vw 0 0.5vw 0.6vw;
+    height: 2.4vw;
+    border: 0.1vw solid #397f21;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    margin-right: 0.42vw;
+    /*margin-left: 0.75vw;*/
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+
+/*.header .call_me::before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*width: 1px;*/
+    /*height: 100%;*/
+    /*left: 0;*/
+    /*background-color: #82d90f;*/
+    /*cursor: pointer;*/
+/*}*/
+
+
 .header .call_me .button {
     background-color: transparent;
 }
@@ -75,8 +101,7 @@ body {
 .mobile_bottom .telephone,
 .header .telephone,
 .header .button,
-.header .city,
-.header .call_me {
+.header .city {
     float: left;
     color: #ffffff;
     position: relative;
@@ -207,16 +232,16 @@ body {
 }
 .header .city {
     padding-right: 1.7vw;
-    padding-left: 0.6vw;
+    padding-left: 1.7vw;
 }
-.header .city::before {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    right: 0;
-    background-color: #397f21;
-}
+/*.header .city::before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*width: 1px;*/
+    /*height: 100%;*/
+    /*right: 0;*/
+    /*background-color: #397f21;*/
+/*}*/
 .header .call_me .img,
 .header .call_me .input_arrow,
 .header .call_me .button {
@@ -225,27 +250,15 @@ body {
 .header .call_me .img img{
     height: 100%;
 }
-.header .call_me .img {
-    width: 2.4vw;
-    padding: 0.4vw 0 0.5vw 0.6vw;
-    height: 2.4vw;
-    border: 0.1vw solid #397f21;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    border-radius:50%;
-    margin-top: 0.8vw;
-    margin-left: 0.75vw;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-}
-.header .call_me .button {
-    margin-left: .4vw;
-    margin-top: .4vw;
+
+.header .call_me .button::after {
+    content: '';
+    display: none;
+    /*margin-left: .4vw;*/
+    /*margin-top: .4vw;*/
 }
 .header .call_me .button p {
-    font-size: 100%;
+    font-size: .83vw;
     padding-bottom: .2vw;
     text-transform: uppercase;
 }
@@ -270,13 +283,14 @@ body {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    margin-top: 1.75vw;
+    margin-top: 1.09vw;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
     cursor: pointer;
-    margin-right: .1vw;
+    margin-left: .3vw;
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.2);
 }
 .header .call_me .input_arrow:hover {
     background: -moz-linear-gradient(90deg, rgba(67,154,6,1) 0%, rgba(67,154,6,1) 53%, rgba(111,198,0,1) 100%); /* ff3.6+ */
