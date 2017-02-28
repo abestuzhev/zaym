@@ -926,6 +926,7 @@ body {
     height: 33.2vw;
     border-radius: 6px;
     overflow: hidden;
+    margin-right: 1vw;
 }
 .opacity {
     opacity: 1!important;

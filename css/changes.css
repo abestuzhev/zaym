@@ -293,7 +293,7 @@
 }
 
 .calculation_input .range-value_day {
-  idth: 3.43vw;
+  width: 3.43vw;
 }
 
 .calculation_stock {
@@ -312,6 +312,7 @@
 .calculation-contents {
   padding: 1vw 0 1.15vw;
   border-top: 1px solid #dedede;
+  text-align: center;
 }
 
 .calculation-contents_sum {
@@ -319,7 +320,7 @@
   background-color: #F4F4F4;
   border-radius: 4px;
   padding: .59vw 0;
-  width: 17vw;
+  width: 59%;
   height: 4.4vw;
   display: inline-block;
   vertical-align: top;
@@ -363,7 +364,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  width: 14vw;
+  width: 40%;
   height: 4.4vw;
 }
 
@@ -487,8 +488,8 @@
 /*range*/
 .range-slider {
   position: relative;
-  height: 2.39vw;
-  margin-bottom: 1.04vw;
+  /*height: 2.39vw;*/
+  margin-bottom: 2.04vw;
 }
 
 .range-slider__input {
@@ -509,7 +510,7 @@
 .range-slider_min,
 .range-slider_max {
   position: absolute;
-  bottom: 0;
+  bottom: -1vw;
   color: #262F47;
   font-size: .62vw;
   font-weight: 400;
@@ -528,7 +529,6 @@
  */
 .range-slider__input::-moz-focus-outer {
   border: 0;
-  /* [1] */
 }
 
 .range-slider__input::-webkit-slider-runnable-track {

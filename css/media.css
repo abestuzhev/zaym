@@ -118,10 +118,26 @@
     .button_callback {
         display: none;
     }
+
+    .slider_container2 .slider_box2,
+    .slider_container2 .slider_item2,
+    .slider_container2 .slider_item2 .img,
+    .slider_container .slider_box,
+    .slider_container .slider_item,
+    .slider_container .slider_item .img {
+        height: 33.9vw;
+        border-radius: 6px;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 1366px) {
 
+}
+@media (max-width: 992px) {
+    .calculation-view_label {
+        font-size: 0.9vw;
+    }
 }
 
 @media (max-width: 767px) {
@@ -209,10 +225,13 @@
         text-align: center;
         text-transform: uppercase;
         font-size: 60%;
+        cursor: pointer;
     }
     .mobile_menu_click p {
         margin-top: .3vw;
         font-size: 56%;
+        color: #fff;
+        font-weight: 600;
     }
     .mobile_menu_click img {
         width: 60%;
@@ -282,6 +301,138 @@
         height:8.4vw;
     }
 
+    .range-slider {
+        margin-bottom: 4.04vw;
+    }
+
+    .range-slider__input {
+        width: 100%;
+        /*height: 46px;*/
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .range-slider__input:focus {
+        outline: none;
+    }
+
+    .range-slider_min,
+    .range-slider_max {
+        position: absolute;
+        bottom: auto;
+        color: #262F47;
+        font-size: 1.62vw;
+        font-weight: 400;
+    }
+
+    .range-slider_min {
+        left: 0;
+    }
+
+    .range-slider_max {
+        right: 0;
+    }
+
+    /**
+     * 1. Remove outline on FF.
+     */
+    .range-slider__input::-moz-focus-outer {
+        border: 0;
+    }
+
+    .range-slider__input::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1vw;
+        cursor: pointer;
+        background-color: #eee;
+        border-radius: 2px;
+    }
+
+    .range-slider__input::-webkit-slider-thumb {
+        box-sizing: content-box;
+        width: 2.5vw;
+        height: 2.5vw;
+        background-color: #4AAC0C;
+        /*background-image: linear-gradient(to top, #46A80E 0%, #73CA00 100%);*/
+        margin-top: -1.5vw;
+        margin-right: 3vw;
+        position: relative;
+        left: .3vw;
+        border: .8vw solid white;
+        /*border: 5px solid rgba(255, 255, 255, 0.1);*/
+        box-shadow: 0 0 0 1px #48AA0D;
+        border-radius: 50%;
+        cursor: pointer;
+        -webkit-appearance: none;
+        appearance: none;
+
+    }
+
+    .range-slider__input::-moz-range-track {
+        width: 100%;
+        height: 1vw;
+        cursor: pointer;
+        background-color: #3C3C3C;
+    }
+
+    .range-slider__input::-moz-range-thumb {
+        width: 2.39vw;
+        height: 2.39vw;
+        margin-top: -1.15vw;
+        border: .88vw solid white;
+        box-shadow: 0 0 0 1px black;
+        border-radius: 50%;
+        background: blue;
+        cursor: pointer;
+        -moz-appearance: none;
+        appearance: none;
+        box-sizing: border-box;
+    }
+
+    .range-slider__input::-ms-track {
+        width: 100%;
+        height: 1vw;
+        border-color: transparent;
+        border-width: 2px 0;
+        background: transparent;
+        color: transparent;
+        cursor: pointer;
+        box-sizing: border-box;
+        background-color: #3C3C3C;
+    }
+
+    .range-slider__input::-ms-fill-lower {
+        background: #666;
+        border-radius: 0;
+        height: 2px;
+        box-sizing: border-box;
+    }
+
+    .range-slider__input::-ms-fill-upper {
+        background: #CCC;
+        border-radius: 0;
+        height: 2px;
+        box-sizing: border-box;
+    }
+
+    .range-slider__input::-ms-thumb {
+        width: 2.29vw;
+        height: 2.29vw;
+        margin-top: 0;
+        border: .88vw solid white;
+        box-shadow: 0 0 0 1px black;
+        border-radius: 50%;
+        background: blue;
+        cursor: pointer;
+        appearance: none;
+        box-sizing: border-box;
+    }
+
+
     .slider.slider-horizontal .slider-tick,
     .slider.slider-horizontal .slider-handle {
         margin-top: -1vw;
@@ -301,6 +452,19 @@
     .calculation .return_div {
         padding: 5.7vw 3.5vw 5vw;
     }
+
+    .calculation-view_label {
+        font-size: 2.9vw;
+        background-color: #e0e0e0;
+        padding: 1.5vw 5.5vw;
+    }
+
+    .calculation-view_item input[type=radio]:checked + .calculation-view_label::after {
+        width: 2.54vw;
+        left: 2.24vw;
+        height: 1.98vw;
+    }
+
     .calculation .new_client input[type="checkbox"] + label::before {
         height: 6vw;
         width: 6vw;
@@ -532,7 +696,7 @@
         float: right;
         text-align: center;
         position: relative;
-        padding:2.5vw 1.5vw 3.5vw;
+        padding:2.5vw 1.4vw 3.5vw;
     }
     .mobile_button_contacts::before {
         content: '';
@@ -843,19 +1007,25 @@
     .calculation_stock {
         padding: 1vw 0;
         font-size: 3.2vw;
+        background-color: #e0e0e0;
+        margin-bottom: 3vw;
     }
 
     .calculation-contents_sum {
         background-color: #cccccc;
         width: 54vw;
         height: 11.4vw;
-        padding: 1.59vw 0;
+        padding: 1.3vw 0;
     }
 
     .calculation-contents_sum-title {
         font-size: 2.6vw;
     }
     .calculation-contents_sum-text {font-size: 2.94vw;}
+
+    .calculation-contents_sum-number {
+        font-size: 3.56vw;
+    }
 
     /*.c-stock-preview*/
     .c-stock-preview {
@@ -1666,7 +1836,7 @@
         padding: 1.2vw 5.2vw;
     }
     .header .button:nth-child(3) img {
-        height: 10vw;
+        height: 8vw;
     }
     .header > .button,
     .header .call_me {
@@ -1682,5 +1852,23 @@
     .mobile_menu_click p {
         margin-top: 1.3vw;
         font-size: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    .calculation-contents_btn,
+    .calculation-contents_sum {
+        width: 100%;
+    }
+    .calculation-contents_sum {
+        margin-bottom: 3vw;
+        height: auto;
+    }
+    .calculation-contents_sum-title {font-size: 4.6vw;}
+    .calculation-contents_sum-text {font-size: 3.94vw;}
+    .calculation-contents_sum-number {font-size: 7.56vw;}
+
+    .calculation-view_label {
+        padding: 1.5vw 2.5vw;
     }
 }
