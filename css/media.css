@@ -1,9 +1,14 @@
 @media (max-width: 1600px){
-    .c-stock-preview:nth-child(4){
+    /*.c-stock-preview:nth-child(4){*/
+        /*display: none;*/
+    /*}*/
+
+    .stock_item:last-child {
         display: none;
     }
+
     .c-stock-preview {
-        width: 27vw;
+        width: 26.5vw;
         font-size: .95vw;
     }
     .c-stock-preview .c-stock-preview_title {
@@ -14,7 +19,7 @@
     }
 }
 
-@media (max-width: 1366px) and (min-width: 767px) {
+@media (max-width: 1367px) and (min-width: 767px) {
     .header {
         height: 5.95vw;
     }
@@ -82,7 +87,7 @@
     }
 
     .c-stock-preview {
-        width: 26.1vw;
+        width: 25.9vw;
     }
 
     .mobile_bottom .telephone .img, .header .telephone .img {

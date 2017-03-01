@@ -90,6 +90,21 @@
 /*********************************************/
 /*c-stock-preview*/
 /*********************************************/
+.stock_list {
+  text-align: justify;
+  margin-right: 1vw;
+}
+.stock_list::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.stock_item {
+  display: inline-block;
+}
+
+
 .c-stock-preview {
   position: relative;
   display: inline-block;
@@ -167,6 +182,7 @@
   font-family: "Open Sans";
   font-size: .94vw;
   font-weight: 600;
+  text-align: left;
 }
 
 .c-stock-preview .c-stock-preview_body {
