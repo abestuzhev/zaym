@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee7db935-9a76-450a-b18b-7d0ece5fe35c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-    </list>
+    <list default="true" id="ee7db935-9a76-450a-b18b-7d0ece5fe35c" name="Default" comment="" />
     <ignored path="zaym.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -282,15 +277,15 @@
       <workItem from="1488262840037" duration="13896000" />
       <workItem from="1488303085268" duration="3673000" />
       <workItem from="1488307357050" duration="1348000" />
-      <workItem from="1488348601309" duration="22197000" />
+      <workItem from="1488348601309" duration="22279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70844000" />
+    <option name="totallyTimeSpent" value="70926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="-8" width="1873" height="1096" extended-state="0" />
+    <frame x="55" y="-8" width="1873" height="1096" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06729178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="892" y="27" width="198" height="1003" />
