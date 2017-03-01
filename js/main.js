@@ -6,7 +6,7 @@
 //----------------------------------------//
 
 // Lower track color
-var rangeSliderTrackColor = '#ccc',
+var rangeSliderTrackColor = '#3c3c3c',
 // Upper track color
     rangeSliderTrackFillColor = '#54b309',
 
@@ -209,17 +209,18 @@ $(document).ready(function () {
 
     var range = $('.range-slider__input');
     var value = $('.range-value');
-    var monparent;
+    // var monparent;
 
     range.on('input', function(){
-        monparent=$(this).parents(".calculation_range").siblings(".calculation-box_left");
-
+        monparent=$(this).parents(".calculation_range").siblings(".calculation-box_list");
+        console.log(monparent);
       value=$(monparent).find('.range-value');
         $(value).val(this.value);
     });
 
     value.on('input', function(){
-        monparent=$(this).parents(".calculation-box_left").siblings(".calculation_range");
+        monparent=$(this).parents(".calculation-box_list").siblings(".calculation_range");
+        console.log(monparent);
         range=$(monparent).find('.range-slider__input');
         $(range).val(this.value);
 

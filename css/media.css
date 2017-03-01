@@ -90,6 +90,10 @@
         width: 25.9vw;
     }
 
+    .menu_box {
+        height: 46vw;
+    }
+
     .mobile_bottom .telephone .img, .header .telephone .img {
         width: 3vw;
         margin: 0.2vw 0.5vw 0 2.9vw;
@@ -1033,11 +1037,16 @@
         font-size: 3.56vw;
     }
 
+    .calculation-box_list + .calculation_range {
+        margin-top: -8.5vw;
+    }
+
     /*.c-stock-preview*/
     .c-stock-preview {
         width: 100%;
         font-size: 75%;
         font-weight: 300;
+        margin-bottom: 2vw;
     }
     .c-stock-preview .c-stock-preview_title {
         font-size: 4.1vw;
@@ -1051,7 +1060,24 @@
         margin-top: 2.83vw;
         line-height: .7;
     }
-    .c-stock-preview_more {font-size: 5vw;}
+    .c-stock-preview_text {
+        padding: 1vw;
+    }
+
+    .c-stock-preview_more,
+    .c-stock-preview_more:hover {
+        right: 3.6vw;
+        bottom: 2.76vw;
+        width: 5.68vw;
+        height: 2.78vw;
+    }
+
+    .c-stock-preview .c-stock-preview_tag {
+        right: 3.9vw;
+        width: 2.83vw;
+        height: 9.9vw
+    }
+
     .c-stock-preview .c-stock-preview_date-month {font-size: 1.6vw;}
 
     .mobile_menu.two {

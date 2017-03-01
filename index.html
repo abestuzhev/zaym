@@ -60,14 +60,12 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                     </div>
                     <div class="button button_address">
                         <div class="button_input open_contacts">
-                            <img src="img/address.png" alt="">
                             <span>Наши офисы</span>
                         </div>
-
                     </div>
+                    <!--<div class="button button_address">Наши офисы</div>-->
                     <div class="button button_callback">
                         <div id="write" class="button_input">
-                            <img src="img/mail.png" alt="">
                             <span>Обратная связь</span>
                         </div>
                     </div>
@@ -217,26 +215,29 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                         </div>
                                         <div class="calc_content">
                                             <div class="calculation-box">
-                                                <div class="calculation-box_left">
+                                              <div class="calculation-box_list">
+                                                <div class="calculation-box_column">
                                                     <span class="calculation-box_text">Сумма займа:</span>
                                                     <div class="calculation_input">
-                                                        <input type="text" class="range-value range-value_price" value="17000">
+                                                      <input type="text" class="range-value range-value_price" value="17000">
                                                     </div>
                                                     <span class="sum_text">рублей</span>
-                                                </div><!--calculation-sum_left-->
-                                                <div class="calculation-box_right">
+                                                </div>
+                                                <div class="calculation-box_column">
                                                     <span class="calculation-box_text">Плата за заём:</span>
                                                     <span class="calculation-box_number">1 000</span>
                                                     <span class="calculation-box_text">рублей</span>
                                                 </div>
+                                              </div>
 
-                                                <div class="calculation_range">
-                                                    <div class="range-slider">
-                                                        <input class="range-slider__input" type="range" value="17000" min="1000" max="25000" step="1000">
-                                                        <div class="range-slider_min">1 000</div>
-                                                        <div class="range-slider_max">25 000</div>
-                                                    </div>
-                                                </div>
+
+                                              <div class="calculation_range">
+                                                  <div class="range-slider">
+                                                      <input class="range-slider__input" type="range" value="17000" min="1000" max="25000" step="1000">
+                                                      <div class="range-slider_min">1 000</div>
+                                                      <div class="range-slider_max">25 000</div>
+                                                  </div>
+                                              </div>
                                             </div>
                                             <!--<div class="min_max">-->
                                             <!--<span class="min">min: 1000</span>-->
@@ -252,13 +253,16 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                             <div class="calculation_stock">Беспроцентная неделя для всех новых  клиентов</div>
 
                                             <div class="calculation-box">
-                                                <div class="calculation-box_left">
-                                                    <span class="calculatio-box_text">Срок займа:</span>
-                                                    <div class="calculation_input">
-                                                        <input type="text" class="range-value range-value_day" value="11">
-                                                    </div>
-                                                    <span class="sum_text">дней</span>
-                                                </div><!--calculation-sum_left-->
+                                              <div class="calculation-box_list">
+                                                <div class="calculation-box_item">
+                                                  <span class="calculatio-box_text">Срок займа:</span>
+                                                  <div class="calculation_input">
+                                                    <input type="text" class="range-value range-value_day" value="11">
+                                                  </div>
+                                                  <span class="sum_text">дней</span>
+                                                </div>
+                                              </div>
+
                                                 <div class="calculation_range">
                                                     <div class="range-slider">
                                                         <input class="range-slider__input" type="range" value="11" min="1" max="30" step="1"/>
@@ -451,7 +455,8 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                         <div class="c-stock-preview_body">
                                             <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение,  получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
                                         </div>
-                                        <a href="#" class="c-stock-preview_more">→</a>
+                                        <a href="#" class="c-stock-preview_more"></a>
+                                      <div class="c-stock-preview_tag"></div>
                                     </div><!--c-stock-preview-->
                                 </div>
                                 <div class="stock_item">
@@ -466,7 +471,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                         <div class="c-stock-preview_body">
                                             <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, олучат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
                                         </div>
-                                        <a href="#" class="c-stock-preview_more">→</a>
+                                        <a href="#" class="c-stock-preview_more"></a>
                                     </div><!--c-stock-preview-->
                                 </div>
                                 <div class="stock_item">
@@ -481,7 +486,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                         <div class="c-stock-preview_body">
                                             <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
                                         </div>
-                                        <a href="#" class="c-stock-preview_more">→</a>
+                                        <a href="#" class="c-stock-preview_more"></a>
                                     </div><!--c-stock-preview-->
                                 </div>
                                 <div class="stock_item">
@@ -496,7 +501,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                         <div class="c-stock-preview_body">
                                             <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
                                         </div>
-                                        <a href="#" class="c-stock-preview_more">→</a>
+                                        <a href="#" class="c-stock-preview_more"></a>
                                     </div><!--c-stock-preview-->
                                 </div><!-- stock_item -->
                             </div><!-- stock_list -->

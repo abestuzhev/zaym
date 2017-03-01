@@ -80,6 +80,7 @@ body {
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.2);
 }
 
 /*.header .call_me::before {*/
@@ -250,12 +251,14 @@ body {
     height: 100%;
 }
 
-.header .call_me .button::after {
+.header .call_me .button::after,
+.header .call_me .button::before {
     content: '';
     display: none;
     /*margin-left: .4vw;*/
     /*margin-top: .4vw;*/
 }
+
 .header .call_me .button p {
     font-size: .83vw;
     padding-bottom: .2vw;
@@ -263,16 +266,21 @@ body {
 }
 .header .call_me .button input {
     border: none;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border-radius:3px;
+    -webkit-border-radius:.4vw;
+    -moz-border-radius:.4vw;
+    border-radius: .4vw;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 75%;
+    font-size: 70%;
     padding-left: 0.5vw;
     height: 1.4vw;
     width: 7vw;
 }
+
+.header .call_me .button input::-webkit-input-placeholder {color: #585858;}
+.header .call_me .button input::-moz-placeholder          {color: #585858;}/* Firefox 19+ */
+.header .call_me .button input:-moz-placeholder           {color: #585858;}/* Firefox 18- */
+.header .call_me .button input:-ms-input-placeholder      {color: #585858;}
 
 .header .call_me .input_arrow {
     height: 1.4vw;
@@ -303,6 +311,7 @@ body {
 .header .call_me .input_arrow i {
     vertical-align: top;
     padding-top: .1vw;
+    color: #fff;
 }
 .header .call_me:after {
     position: absolute;
@@ -322,7 +331,7 @@ body {
     background: linear-gradient(0deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cb00', endColorstr='#4dae0b',GradientType=0 ); /* ie6-9 */
     color: #ffffff;
-    height: 49.1vw;
+    height: 45.3vw;
     position: relative;
 }
 .menu_box:after {
@@ -343,13 +352,14 @@ body {
 .menu_box .menu > li {
     font-weight: 700;
     font-size: 90%;
-    padding:0.3vw 1vw;
+    padding:0.5vw 1vw;
     border-bottom: 1px solid #afe672;
     cursor: pointer;
 }
 .menu_box .menu li.about_li {
     background-color: #5ab808;
     padding: 0;
+    /*padding:0.5vw 0;*/
 }
 .menu_box .menu li .drop {
     font-weight: 300;
@@ -371,8 +381,8 @@ body {
     border-bottom: 1px solid #afe672;
     border-top: 1px solid #afe672;
     padding-left: 1vw;
-    padding-top: 0.3vw;
-    padding-bottom: 0.3vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 .menu_box .copy {
     position: absolute;
@@ -388,23 +398,29 @@ body {
 .menu_box .menu li span.default {
     position: relative;
 }
-.menu_box .menu li span.default:before {
+.menu_box .menu li span.default::before {
     position: absolute;
     content: "\f105";
     right: 0.2vw;
     font: normal normal normal 14px/1 FontAwesome;
-    top:0.4vw;
+    top:0.5vw;
     -webkit-border-radius:50%;
     -moz-border-radius:50%;
     border-radius:50%;
     border: 1px solid #ffffff;
-    height:1vw;
-    width: 1vw;
+    height: 12px;
+    width: 12px;
     text-align: center;
-    padding-left: .08vw;
+    padding-left: .1vw;
     z-index: 6;
     font-size: 100%;
+    opacity: 0;
 }
+
+.menu_box .about_li:hover .default::before {
+    opacity: 1;
+}
+
 .menu_box .menu li span.default.active:before {
     content: "\f107";
     padding-left: 0;
@@ -913,8 +929,7 @@ body {
 .slider_container2,
 .slider_container {
     position: relative;
-    /*margin-top: -1.3vw;*/
-    margin-top: .94vw;
+    margin-top: 1.59vw;
 }
 .slider_container2 .slider_box2,
 .slider_container2 .slider_item2,
