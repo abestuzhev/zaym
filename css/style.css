@@ -323,6 +323,8 @@ body {
     height: 100%;
 }
 .menu_box {
+    position: relative;
+    z-index: 9999;
     background: -moz-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #74cb00), color-stop(47%, #4dae0b), color-stop(100%, #4dae0b)); /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* safari5.1+,chrome10+ */
@@ -355,9 +357,70 @@ body {
     padding:0.5vw 1vw;
     border-bottom: 1px solid #afe672;
     cursor: pointer;
+    position: relative;
 }
+
+#about_company {
+    position: relative;
+    display: block;
+}
+
+.menu_box .menu > li::after,
+#about_company::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: .3vw;
+    height: 1.77vw;
+    /*background-color: #54b309;*/
+    background: url("../img/menu_box-arrow.png") 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    opacity: 0;
+}
+
+.menu-active-color {
+    background-color: #54b309;
+}
+
+.menu_box .menu .about_li::after {
+    content: '';
+    display: none;
+}
+
+.menu_box .menu > li:hover {
+    background-color: #54b309;
+}
+
+.menu_box .menu > li:hover::after{
+    opacity: 1;
+}
+#about_company:hover::after{
+    opacity: 1;
+}
+
+.menu_box .menu > li.menu-active {
+    background-color: #54b309;
+    position: relative;
+}
+
+.menu_box .menu > li.menu-active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: .3vw;
+    height: 1.77vw;
+    background: url("../img/menu_box-arrow.png") 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+}
+
 .menu_box .menu li.about_li {
-    background-color: #5ab808;
+    /*background-color: #5ab808;*/
     padding: 0;
     /*padding:0.5vw 0;*/
 }
@@ -408,8 +471,8 @@ body {
     -moz-border-radius:50%;
     border-radius:50%;
     border: 1px solid #ffffff;
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
     text-align: center;
     padding-left: .1vw;
     z-index: 6;

@@ -213,16 +213,26 @@ $(document).ready(function () {
 
     range.on('input', function(){
         monparent=$(this).parents(".calculation_range").siblings(".calculation-box_list");
-        console.log(monparent);
       value=$(monparent).find('.range-value');
         $(value).val(this.value);
     });
 
     value.on('input', function(){
         monparent=$(this).parents(".calculation-box_list").siblings(".calculation_range");
-        console.log(monparent);
         range=$(monparent).find('.range-slider__input');
         $(range).val(this.value);
 
+    });
+
+    $(".menu_item").on("click", function(){
+        $(this).siblings().removeClass("menu-active");
+        $(this).addClass("menu-active");
+        $("li.about_li").removeClass("menu-active-color");
+    });
+
+    $("li.about_li").on("click", function(){
+        $(this).siblings().removeClass("menu-active");
+        $("#about_company").addClass("menu-active");
+        $(this).addClass("menu-active-color");
     });
 });//ready end
