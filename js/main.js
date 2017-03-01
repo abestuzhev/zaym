@@ -207,26 +207,21 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 $(document).ready(function () {
 
-range = $('.range-slider__input');
-value = $('.range-value');
+    var range = $('.range-slider__input');
+    var value = $('.range-value');
+    var monparent;
 
-// value.val(range.attr('value'));
+    range.on('input', function(){
+        monparent=$(this).parents(".calculation_range").siblings(".calculation-box_left");
 
-range.on('input', function(){
-  	monparent=$(this).parents(".calculation_range").siblings(".calculation-box_left");
-  // monparent=this.parentNode;
+      value=$(monparent).find('.range-value');
+        $(value).val(this.value);
+    });
 
-  value=$(monparent).find('.range-value');
-    $(value).val(this.value);
-});
+    value.on('input', function(){
+        monparent=$(this).parents(".calculation-box_left").siblings(".calculation_range");
+        range=$(monparent).find('.range-slider__input');
+        $(range).val(this.value);
 
-value.on('input', function(){
-    // monparent=this.parentNode;
-    monparent=$(this).parents(".calculation-box_left").siblings(".calculation_range");
-  	range=$(monparent).find('.range-slider__input');
-    $(range).val(this.value);
-
-});
-
-
+    });
 });//ready end
