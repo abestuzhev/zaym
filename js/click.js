@@ -1,5 +1,7 @@
 jQuery(document).ready(function () {
 
+
+
     //-------razvertivanie menu---------
    jQuery('.menu_box .menu #about_company').click(function () {
         if(jQuery(this).hasClass('active')){
@@ -717,4 +719,14 @@ jQuery(document).ready(function () {
         }
 
     });
+
+    $(".menu > li, .button, .city span").on("click", function(){
+        $("body").addClass("hidden-body");
+    });
+
+    $(".modal .close").on("click", function(){
+        $("body").removeClass("hidden-body");
+    });
+
+
 });

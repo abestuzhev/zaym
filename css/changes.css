@@ -189,7 +189,6 @@
   font-family: "Open Sans", sans-serif;
   font-size: .65vw;
   font-weight: 400;
-  padding-bottom: 1vw;
   margin: 0 .2vw;
 }
 
@@ -270,8 +269,13 @@
 }
 
 .c-stock-preview .c-stock-preview_body {
-  padding: .52vw .63vw;
+  padding: .57vw 1.71vw 2.08vw .85vw;
 }
+
+.c-stock-preview .c-stock-preview_text {
+  text-align: left;
+}
+
 .c-stock-preview .c-stock-preview_tag {
    position: absolute;
    top: 0;
