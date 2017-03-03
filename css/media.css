@@ -95,7 +95,7 @@
     }
 
     .menu_box {
-        height: 46vw;
+        /*height: 46vw;*/
     }
 
     .mobile_bottom .telephone .img, .header .telephone .img {
@@ -138,7 +138,7 @@
     .slider_container .slider_box,
     .slider_container .slider_item,
     .slider_container .slider_item .img {
-        height: 33.9vw;
+        /*height: 33.9vw;*/
         border-radius: 6px;
         overflow: hidden;
     }
@@ -283,7 +283,7 @@
         height: auto;
     }
     .calculation .h3 {
-        margin-top: 6vw;
+        /*margin-top: 6vw;*/
         background: -moz-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #74cb00), color-stop(47%, #4dae0b), color-stop(100%, #4dae0b));
         background: -webkit-linear-gradient(90deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%);
@@ -1862,7 +1862,19 @@
     }
 
     .c-stock-preview .c-stock-preview_text {
-      height: 5vh !important;
+      /*height: 5vh !important;*/
+      font-size: 3vw;
+      height: auto;
+      overflow: visible;
+    }
+
+    .mobile_bottom {
+      padding: 0;
+    }
+
+
+    .full_height {
+      min-height: auto;
     }
 }
 
@@ -1883,14 +1895,21 @@
 
 
 
-@media (max-width: 543px) {
+@media (max-width: 481px) {
+
     body,html {
-        margin-top: 26.5vw;
+      margin-top: 19.5vw;
     }
     .header .logo {
         width: 100%;
         text-align: center;
-        padding: 2.7vw 3vw 2.7vw 2vw;
+        /*padding: 2.7vw 3vw 2.7vw 2vw;*/
+    }
+
+    .header .logo img {
+        max-width: 100%;
+        width: 75%;
+        margin: auto;
     }
     .header .button:nth-child(3) {
         width: 80%;
@@ -1900,9 +1919,10 @@
     }
     .header .button:nth-child(3) .button_input {
         font-size: 100%;
-        margin-right: 4vw;
+        /*margin-right: 4vw;
         margin-left: 4vw;
-        margin-top: 5vw;
+        margin-top: 5vw;*/
+        margin: 3vw;
         padding: 1.2vw 5.2vw;
     }
     .header .button:nth-child(3) img {
@@ -1910,14 +1930,14 @@
     }
     .header > .button,
     .header .call_me {
-        height: 25vw;
+        height: auto;
     }
     .header .button span {
         margin-top: 1vw;
     }
     .mobile_menu_click img {
         width: 70%;
-        margin-top: 5vw;
+        /*margin-top: 5vw;*/
     }
     .mobile_menu_click p {
         margin-top: 1.3vw;
@@ -1939,6 +1959,6 @@
     .calculation-contents_sum-number {font-size: 7.56vw;}
 
     .calculation-view_label {
-        padding: 1.5vw 2.5vw;
+        padding: 2.5vw 5.5vw;
     }
 }

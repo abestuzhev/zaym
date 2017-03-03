@@ -333,7 +333,7 @@ body {
     background: linear-gradient(0deg, #4dae0b 0%, #4dae0b 53%, #74cb00 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74cb00', endColorstr='#4dae0b',GradientType=0 ); /* ie6-9 */
     color: #ffffff;
-    height: 45.3vw;
+    height: 42vw;
     position: relative;
 }
 .menu_box:after {
@@ -349,7 +349,7 @@ body {
     display: block;
 }
 .menu_box .menu  {
-    padding-top: 1.5vw;
+    padding-top: 1vw;
 }
 .menu_box .menu > li {
     font-weight: 700;
@@ -1004,7 +1004,7 @@ body {
 .slider_container .slider_box,
 .slider_container .slider_item,
 .slider_container .slider_item .img {
-    height: 33.2vw;
+    height: 30.4vw;
     border-radius: 6px;
     overflow: hidden;
     margin-right: 1vw;
@@ -1426,14 +1426,17 @@ body {
 .modal.write .check span {
     font-size: 70%;
     font-weight: 600;
+    vertical-align: top;
+    margin-top: .2vw;
+    display: inline-block;
 }
-.modal.write .check span {
-    font-size: 70%;
-    font-weight: 600;
-}
+
 .modal.write .check span span {
     font-size: 100%;
     border-bottom:1px solid #7A7979;
+    vertical-align: top;
+    margin-top: 0;
+    display: inline-block;
 }
 .modal.write .button {
     text-align: center;

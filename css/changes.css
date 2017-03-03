@@ -164,6 +164,7 @@
 .stock_list {
   text-align: justify;
   margin-right: 1vw;
+  font-size: 0;
 }
 .stock_list::after {
   content: '';
@@ -205,7 +206,7 @@
   color: #3e3e3e;
   position: absolute;
   right: .6vw;
-  bottom: .76vw;
+  bottom: 1.76vw;
   width: 1.68vw;
   height: .78vw;
   background: url("../img/icon-stock-arrow.png") 0 0 no-repeat;
@@ -269,11 +270,13 @@
 }
 
 .c-stock-preview .c-stock-preview_body {
-  padding: .57vw 1.71vw 2.08vw .85vw;
+  padding: .57vw 2.71vw .85vw .85vw;
 }
 
 .c-stock-preview .c-stock-preview_text {
   text-align: left;
+  height: 2.6vw;
+  overflow: hidden;
 }
 
 .c-stock-preview .c-stock-preview_tag {
@@ -297,15 +300,15 @@
 }
 .calculation .h3 {
   text-align: center;
-  padding: .8vw 0 1.2vw;
   background-image: linear-gradient(to top, #44A70E 0%, #44A70E 0%, #74CB00 100%);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  padding: .3vw 0 1.2vw;
 }
 .calculation .h3 .h4 {
   color: #ffffff;
   font-weight: 700;
-  padding: .4vw 0 .2vw;
+  padding: 0;
   display: block;
 
   font-size: 190%;
@@ -433,7 +436,7 @@
 }
 
 .calculation-contents {
-  padding: 1vw 0 1.15vw;
+  padding: 1vw 0 .3vw;
   border-top: 1px solid #dedede;
   text-align: center;
 }
@@ -748,7 +751,7 @@
 
 /*calculation-view*/
 .calculation-view {
-  margin-bottom: 1.1vw;
+  /*margin-bottom: 1.1vw;*/
   text-align: justify;
 }
 
@@ -807,53 +810,7 @@
 }
 
 
-.calculation-view {
-  margin-bottom: 0 !important;
-}
-
-.c-stock-preview .c-stock-preview_text {
-  height: 2.6vw;
-  overflow: hidden;
-}
-
-.c-stock-preview .c-stock-preview_body {
-    padding: .57vw 2.71vw .85vw .85vw !important;
-}
-
-.c-stock-preview_more {
-  bottom: 1.76vw !important;
-}
-
-.calculation .h3 {
-  padding: .3vw 0 1.2vw;
-}
-
-.calculation .h3 .h4 {
-  padding: 0 !important;
-}
-
-.calculation-contents {
-  padding-bottom: .3vw;
-}
-
-.slider_container2 .slider_box2, .slider_container2 .slider_item2, .slider_container2 .slider_item2 .img, .slider_container .slider_box, .slider_container .slider_item, .slider_container .slider_item .img {
-  height: 30.4vw !important;
-}
-
-
-.menu_box {
-      height: 42vw !important;
-}
-
-.menu_box .menu {
-  padding-top: 1vw;
-}
-
 .calculation,
 .slider_container2, .slider_container {
   margin-top: 1vw;
-}
-
-.stock_list {
-  font-size: 0;
 }
