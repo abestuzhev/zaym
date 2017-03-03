@@ -1860,7 +1860,29 @@
         margin-top: 7vw;
         background-color: #f4f4f4;
     }
+
+    .c-stock-preview .c-stock-preview_text {
+      height: 5vh !important;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 543px) {
     body,html {
         margin-top: 26.5vw;
