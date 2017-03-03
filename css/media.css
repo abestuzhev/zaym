@@ -1943,6 +1943,11 @@
         margin-top: 1.3vw;
         font-size: 100%;
     }
+
+    .calculation .h3 .h4  {
+      font-size: 135%;
+    }
+
 }
 
 @media (max-width: 370px) {
