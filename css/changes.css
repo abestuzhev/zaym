@@ -260,6 +260,7 @@
 }
 
 .c-stock-preview .c-stock-preview_title {
+  display: block;
   margin-left: 4.17vw;
   color: #363636;
   font-family: "Open Sans";
@@ -674,6 +675,8 @@
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
+  position: relative;
+  z-index: 99;
 }
 
 .range-slider__input::-webkit-slider-thumb:hover {
@@ -796,7 +799,7 @@
   background: url("../img/icon-check-white.png") 0 0 no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  width: 1.04vw;
+  width: 1.24vw;
   height: .98vw;
   position: absolute;
   top: 50%;
@@ -805,10 +808,33 @@
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  left: 1.24vw;
+  left: 1.04vw;
   transition: all .2s ease-out;
 }
 
+/*.calculation-view_item:hover*/
+.calculation-view_label:hover {
+  background-color: #e4e4e4;
+}
+
+
+.calculation-view_item:hover .calculation-view_label::after {
+  content: '';
+  background: url("../img/icon-check-gray.png") 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 1.24vw;
+  height: .98vw;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 1.04vw;
+  transition: all .2s ease-out;
+}
 
 .calculation,
 .slider_container2, .slider_container {

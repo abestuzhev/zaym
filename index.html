@@ -130,8 +130,9 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                         </div>
                     </div>
                     <div class="col-lg-10 col-md-10 col-sm-10">
-                        <div class="row add_main">
-                            <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class=" add_main">
+                          <div class="row">
+                            <div class="col-lg-5 col-md-6 col-sm-6 clearfix">
 
                                 <div class="slider_container2 mobile">
                                     <div class="slider_box2">
@@ -224,18 +225,16 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                                     <span class="sum_text">рублей</span>
                                                 </div>
                                                 <div class="calculation-box_column">
-                                                    <span class="calculation-box_text">Плата за заём:</span>
-                                                    <span class="calculation-box_number">1 000</span>
-                                                    <span class="calculation-box_text">рублей</span>
+
                                                 </div>
                                               </div>
 
 
                                               <div class="calculation_range">
                                                   <div class="range-slider">
-                                                      <input class="range-slider__input" type="range" value="17000" min="1000" max="25000" step="1000">
+                                                      <input class="range-slider__input" type="range" value="17000" min="1000" max="30000" step="1000">
                                                       <div class="range-slider_min">1 000</div>
-                                                      <div class="range-slider_max">25 000</div>
+                                                      <div class="range-slider_max">30 000</div>
                                                   </div>
                                               </div>
                                             </div>
@@ -254,12 +253,18 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
 
                                             <div class="calculation-box">
                                               <div class="calculation-box_list">
-                                                <div class="calculation-box_item">
+                                                <div class="calculation-box_column">
                                                   <span class="calculatio-box_text">Срок займа:</span>
                                                   <div class="calculation_input">
                                                     <input type="text" class="range-value range-value_day" value="11">
                                                   </div>
                                                   <span class="sum_text">дней</span>
+                                                </div>
+
+                                                <div class="calculation-box_column">
+                                                  <span class="calculation-box_text">Плата за заём:</span>
+                                                  <span class="calculation-box_number">1 000</span>
+                                                  <span class="calculation-box_text">рублей</span>
                                                 </div>
                                               </div>
 
@@ -361,7 +366,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-md-6 col-sm-6">
+                            <div class="col-lg-7 col-md-6 col-sm-6 clearfix">
 
                                 <div class="slider_container hidden-xs">
                                     <div class="slider_box">
@@ -437,75 +442,76 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                 </div>
 
                             </div>
+                          </div><!-- end row -->
 
-                        </div>
-                        <div class="stock">
-                            <div class="stock_list">
-                                <div class="stock_item">
-                                    <div class="c-stock-preview">
-                                        <div class="c-stock-preview_header">
-                                            <div class="c-stock-preview_date">
-                                                <div class="c-stock-preview_date-number">28</div>
-                                                <div class="c-stock-preview_date-month">август</div>
+                            <!-- start stock -->
+                            <div class="stock">
+                                <div class="stock_list">
+                                    <div class="stock_item">
+                                        <div class="c-stock-preview">
+                                            <div class="c-stock-preview_header">
+                                                <div class="c-stock-preview_date">
+                                                    <div class="c-stock-preview_date-number">28</div>
+                                                    <div class="c-stock-preview_date-month">август</div>
+                                                </div>
+                                                <a href="#" class="c-stock-preview_title">Пример оформления акции в несколько строк</a>
                                             </div>
-                                            <div class="c-stock-preview_title">Пример оформления акции в несколько
-                                                строк
+                                            <div class="c-stock-preview_body">
+                                                <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение,  получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
                                             </div>
-                                        </div>
-                                        <div class="c-stock-preview_body">
-                                            <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение,  получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
-                                        </div>
-                                        <a href="#" class="c-stock-preview_more"></a>
-                                      <div class="c-stock-preview_tag"></div>
-                                    </div><!--c-stock-preview-->
-                                </div>
-                                <div class="stock_item">
-                                    <div class="c-stock-preview">
-                                        <div class="c-stock-preview_header">
-                                            <div class="c-stock-preview_date">
-                                                <div class="c-stock-preview_date-number">28</div>
-                                                <div class="c-stock-preview_date-month">август</div>
+                                            <a href="#" class="c-stock-preview_more"></a>
+                                          <div class="c-stock-preview_tag"></div>
+                                        </div><!--c-stock-preview-->
+                                    </div>
+                                    <div class="stock_item">
+                                        <div class="c-stock-preview">
+                                            <div class="c-stock-preview_header">
+                                                <div class="c-stock-preview_date">
+                                                    <div class="c-stock-preview_date-number">28</div>
+                                                    <div class="c-stock-preview_date-month">август</div>
+                                                </div>
+                                                <a href="#" class="c-stock-preview_title">Пример оформления акции в несколько строк </a>
                                             </div>
-                                            <div class="c-stock-preview_title">Пример оформления акции в несколько строк </div>
-                                        </div>
-                                        <div class="c-stock-preview_body">
-                                            <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, олучат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
-                                        </div>
-                                        <a href="#" class="c-stock-preview_more"></a>
-                                    </div><!--c-stock-preview-->
-                                </div>
-                                <div class="stock_item">
-                                    <div class="c-stock-preview">
-                                        <div class="c-stock-preview_header">
-                                            <div class="c-stock-preview_date">
-                                                <div class="c-stock-preview_date-number">28</div>
-                                                <div class="c-stock-preview_date-month">август</div>
+                                            <div class="c-stock-preview_body">
+                                                <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, олучат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
                                             </div>
-                                            <div class="c-stock-preview_title">Пример оформления акции в несколько строк </div>
-                                        </div>
-                                        <div class="c-stock-preview_body">
-                                            <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
-                                        </div>
-                                        <a href="#" class="c-stock-preview_more"></a>
-                                    </div><!--c-stock-preview-->
-                                </div>
-                                <div class="stock_item">
-                                    <div class="c-stock-preview">
-                                        <div class="c-stock-preview_header">
-                                            <div class="c-stock-preview_date">
-                                                <div class="c-stock-preview_date-number">28</div>
-                                                <div class="c-stock-preview_date-month">август</div>
+                                            <a href="#" class="c-stock-preview_more"></a>
+                                        </div><!--c-stock-preview-->
+                                    </div>
+                                    <div class="stock_item">
+                                        <div class="c-stock-preview">
+                                            <div class="c-stock-preview_header">
+                                                <div class="c-stock-preview_date">
+                                                    <div class="c-stock-preview_date-number">28</div>
+                                                    <div class="c-stock-preview_date-month">август</div>
+                                                </div>
+                                                <a href="#" class="c-stock-preview_title">Пример оформления акции в несколько строк </a>
                                             </div>
-                                            <div class="c-stock-preview_title">Пример оформления акции в несколько строк</div>
-                                        </div>
-                                        <div class="c-stock-preview_body">
-                                            <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
-                                        </div>
-                                        <a href="#" class="c-stock-preview_more"></a>
-                                    </div><!--c-stock-preview-->
-                                </div><!-- stock_item -->
-                            </div><!-- stock_list -->
-                        </div> <!--stock-->
+                                            <div class="c-stock-preview_body">
+                                                <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
+                                            </div>
+                                            <a href="#" class="c-stock-preview_more"></a>
+                                        </div><!--c-stock-preview-->
+                                    </div>
+                                    <div class="stock_item">
+                                        <div class="c-stock-preview">
+                                            <div class="c-stock-preview_header">
+                                                <div class="c-stock-preview_date">
+                                                    <div class="c-stock-preview_date-number">28</div>
+                                                    <div class="c-stock-preview_date-month">август</div>
+                                                </div>
+                                                <a href="#" class="c-stock-preview_title">Пример оформления акции в несколько строк</a>
+                                            </div>
+                                            <div class="c-stock-preview_body">
+                                                <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
+                                            </div>
+                                            <a href="#" class="c-stock-preview_more"></a>
+                                        </div><!--c-stock-preview-->
+                                    </div><!-- stock_item -->
+                                </div><!-- stock_list -->
+                            </div> <!--stock-->
+
+                        </div><!-- end add_main -->
 
 
                     </div>

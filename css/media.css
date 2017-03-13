@@ -372,15 +372,15 @@
 
     .range-slider__input::-webkit-slider-thumb {
         box-sizing: content-box;
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 4.5vw;
+        height: 4.5vw;
         background-color: #4AAC0C;
         /*background-image: linear-gradient(to top, #46A80E 0%, #73CA00 100%);*/
-        margin-top: -1.5vw;
+        margin-top: -2.5vw;
         margin-right: 3vw;
         position: relative;
         left: .3vw;
-        border: .8vw solid white;
+        border: 1.2vw solid white;
         /*border: 5px solid rgba(255, 255, 255, 0.1);*/
         box-shadow: 0 0 0 1px #48AA0D;
         border-radius: 50%;
@@ -398,13 +398,13 @@
     }
 
     .range-slider__input::-moz-range-thumb {
-        width: 2.39vw;
-        height: 2.39vw;
+        width: 4.5vw;
+        height: 4.5vw;
         margin-top: -1.15vw;
         border: .88vw solid white;
         box-shadow: 0 0 0 1px black;
         border-radius: 50%;
-        background: blue;
+        background-color: #4AAC0C;
         cursor: pointer;
         -moz-appearance: none;
         appearance: none;
@@ -438,13 +438,13 @@
     }
 
     .range-slider__input::-ms-thumb {
-        width: 2.29vw;
-        height: 2.29vw;
+        width: 4.5vw;
+        height: 4.5vw;
         margin-top: 0;
         border: .88vw solid white;
         box-shadow: 0 0 0 1px black;
         border-radius: 50%;
-        background: blue;
+        background-color: #4AAC0C;
         cursor: pointer;
         appearance: none;
         box-sizing: border-box;
@@ -477,7 +477,8 @@
         padding: 1.5vw 5.5vw;
     }
 
-    .calculation-view_item input[type=radio]:checked + .calculation-view_label::after {
+    .calculation-view_item input[type=radio]:checked + .calculation-view_label::after,
+    .calculation-view_item:hover .calculation-view_label::after {
         width: 2.54vw;
         left: 2.24vw;
         height: 1.98vw;
@@ -1082,8 +1083,8 @@
 
     .c-stock-preview .c-stock-preview_tag {
         right: 3.9vw;
-        width: 2.83vw;
-        height: 9.9vw
+        width: 3.83vw;
+        height: 13.9vw;
     }
 
     .c-stock-preview .c-stock-preview_date-month {font-size: 1.6vw;}

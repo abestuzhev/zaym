@@ -17,10 +17,10 @@ var rangeSliderTrackColor = '#3c3c3c',
     rangeSliderClass = 'range-slider__input--',
 
 // A variable to call every instance of range sliders
-    $rangeSliderElement = document.querySelectorAll('.range-slider input[type=range]'),
+    $rangeSliderElement = document.querySelectorAll('.range-slider input[type=range]')
 
 // A variable to call every instance of dotted range sliders
-    $dottedRangeSliderElement = document.querySelectorAll('.range-slider--dotted input[type=range]');
+    // $dottedRangeSliderElement = document.querySelectorAll('.range-slider--dotted input[type=range]');
 
 
 
@@ -167,43 +167,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
-    // DOTTED RANGE SLIDERS
-
-    // Get all dotted range sliders on the page
-    var dottedSliders = $dottedRangeSliderElement;
-
-    // Create the dots container element
-    createDotsContainerElement();
-
-    // Iterate over all range sliders on the page
-    for (var dottedRangeSliders=0; dottedRangeSliders < dottedSliders.length; dottedRangeSliders++) {
-
-        // Create the dots
-        createRangeSliderDots(dottedRangeSliders);
-
-        // ...and paint them appropriately
-        paintSliderDots(dottedRangeSliders);
-
-        // Add event listener (when the user changes the value)
-        dottedSliders[dottedRangeSliders].addEventListener('input', function() {
-            // Iterate over all range dotted sliders on the page
-            for (var i=0; i < dottedSliders.length; i++) {
-                // ...and paint them correctly on change
-                paintSliderDots(i);
-            }
-        })
-
-        // Add an additional event listener ('mousemove') for IE
-        // (IE seems to have a problem with the 'input' event listeners on range sliders)
-        dottedSliders[dottedRangeSliders].addEventListener('mousemove', function() {
-            // Iterate over all range dotted sliders on the page
-            for (var i=0; i < dottedSliders.length; i++) {
-                // ...and paint them correctly on change
-                paintSliderDots(i);
-            }
-        })
-    }
-
 });
 $(document).ready(function () {
 
@@ -221,6 +184,17 @@ $(document).ready(function () {
         monparent=$(this).parents(".calculation-box_list").siblings(".calculation_range");
         range=$(monparent).find('.range-slider__input');
         $(range).val(this.value);
+        var sliders = $(".range-slider input[type=range]")
+        for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
+            createStyleElements(rangeSliders);
+            $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
+            paintRangeTrack(rangeSliders);
+            sliders[rangeSliders].addEventListener('input', function() {
+                for (var i=0; i < sliders.length; i++) {
+                    paintRangeTrack(i);
+                }
+            })
+        }
 
     });
 
