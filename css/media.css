@@ -1076,9 +1076,13 @@
     .c-stock-preview_more,
     .c-stock-preview_more:hover {
         right: 3.6vw;
-        bottom: 2.76vw;
-        width: 5.68vw;
+        bottom: 5.76vw;
+        width: 5.98vw;
         height: 2.78vw;
+    }
+
+    .c-stock-preview .c-stock-preview_body {
+        padding: .57vw 10.71vw .85vw .85vw;
     }
 
     .c-stock-preview .c-stock-preview_tag {
