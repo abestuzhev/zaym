@@ -74,18 +74,15 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                     </div>
                     <div class="call_me">
                         <div class="img"><img src="img/phone.png" alt=""></div>
-                        <form action="" method="">
-                          <div class="button">
-                              <p>заказать обратный звонок</p>
-                              <input placeholder="Ваше имя" type="text">
-                              <input placeholder="Телефон" type="text">
-                          </div>
-                          <button class="input_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                        </form>
+                        <form id="callback" action="" method=""></form>
+                        <div class="button">
+                            <p>заказать обратный звонок</p>
+                            <input placeholder="Ваше имя" type="text" form="callback">
+                            <input placeholder="Телефон" type="text" form="callback">
+                        </div>
+                        <button class="input_arrow" form="callback"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
                         <div class="mobile_menu_click">
-                            <div class="img_">
-                                <img src="img/mobile_menu.png" alt="">
-                            </div>
+                            <div class="img_"><img src="img/mobile_menu.png" alt=""></div>
                             <p>Меню</p>
                         </div>
                     </div>
