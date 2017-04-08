@@ -2,6 +2,13 @@ body {
     font-family: 'Open Sans',sans-serif;
     font-weight: 300;
 }
+
+button {
+  outline: none;
+  border: 0;
+  background: none;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -309,8 +316,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fc600', endColorstr='#439a06',GradientType=0 ); /* ie6-9 */
 }
 .header .call_me .input_arrow i {
-    vertical-align: top;
-    padding-top: .1vw;
+    /*vertical-align: top;*/
+    /*padding-top: .1vw;*/
     color: #fff;
 }
 .header .call_me:after {
