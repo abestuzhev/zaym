@@ -219,14 +219,14 @@ $(document).ready(function () {
                     }
                 })
             }
-        }, 200);
+        }, 180);
 
         setTimeout(function() {
             clearInterval(timerIdUp);
             //alert( 'стоп' );
-        }, 2200);
+        }, 2000);
 
-    }, 2000);
+    }, 4000);
 
     setTimeout(function() {
 
@@ -237,7 +237,7 @@ $(document).ready(function () {
             var $valueCount = parseInt($value) - 1000;
             $('.range-slider__input--0, .range-value_price').val($valueCount);
 
-            
+
             var sliders = $(".range-slider input[type=range]")
             for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
                 createStyleElements(rangeSliders);
@@ -254,9 +254,9 @@ $(document).ready(function () {
         setTimeout(function() {
             clearInterval(timerIdDown);
             //alert( 'стоп' );
-        }, 1000);
+        }, 1100);
 
-    }, 4200);
+    }, 6200);
 
 
 
