@@ -840,3 +840,176 @@
 .slider_container2, .slider_container {
   margin-top: 1vw;
 }
+
+/***************************************
+change 27-09-2017
+***************************************/
+
+/*popup message*/
+
+.popup-message {
+  /*height: 5.95vw;*/
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  position: fixed;
+  z-index: 99999;
+  top: -85px;
+  right: 1vw;
+  padding: 5px;
+  color: #3b3b3b;
+  width: 19.8vw;
+  font-weight: 400;
+  box-shadow: 0 2px 10px rgba(0,0,0,.2);
+  /*-webkit-transition: all .8s cubic-bezier(1,-.55,.2,1.37);*/
+  /*-moz-transition: all .8s cubic-bezier(1,-.55,.2,1.37);*/
+  /*-ms-transition: all .8s cubic-bezier(1,-.55,.2,1.37);*/
+  /*-o-transition: all .8s cubic-bezier(1,-.55,.2,1.37);*/
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+.popup-message.show-popup {
+  top: 0;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+.popup-message__close {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-message__icon {
+  /*padding: 0 5px;*/
+  padding-right: 5px;
+  float: left;
+  border-right: 1px dashed #838383;
+}
+
+.popup-message__icon img {
+  width: 2.9vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.popup-message__body {
+  float: left;
+  margin-left: 9px;
+}
+
+.popup-message__title {
+  font-size: 82%;
+  font-weight: 700;
+}
+
+.popup-message__price {
+  font-size: 79%;
+  line-height: 1;
+}
+.popup-message__price-num {
+  font-size: 118%;
+  font-weight: 700;
+}
+
+.popup-message__text {
+  font-size: 70%;
+}
+
+
+
+@media screen and (max-width: 1367px){
+  .popup-message__icon img {
+    width: 5.1vw;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .popup-message {
+    font-size: 1.6vw;
+    width: 28.7vw;
+    right: 0;
+  }
+
+  .popup-message__close {
+    top: .3vw;
+  }
+}
+
+/*новости и акции*/
+.c-stock-preview_date {
+  display: none;
+}
+
+.c-stock-preview .c-stock-preview_title {
+  margin-left: 0;
+  padding-right: 3vw;
+}
+
+.c-stock-preview .c-stock-preview_tag {
+  position: absolute;
+  top: 0.6vw;
+  right: .6vw;
+  width: 2.7vw;
+  height: 2.7vw;
+  background: url(../img/icon-sale.png) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.c-stock-preview .c-stock-preview_header {
+  margin: 0 .2vw;
+  background: none;
+}
+
+.c-stock-preview:hover {
+  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);
+  -moz-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);
+  box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);
+}
+
+/*media*/
+
+@media screen and (max-width: 1100px){
+
+
+  .popup-message {
+    width: 30.5vw;
+  }
+
+  .popup-message__icon img {
+    width: 4.4vw;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+
+
+  .popup-message {
+    display: none;
+  }
+
+  .c-stock-preview .c-stock-preview_title {
+    padding-right: 13vw;
+  }
+
+
+  .c-stock-preview .c-stock-preview_tag {
+    top: 1vw !important;
+    right: 3.9vw !important;
+    height: 9.9vw !important;
+    width: 9.8vw !important;
+  }
+
+  .stock_item:last-child {
+    display: block !important;
+  }
+
+}
+

@@ -198,6 +198,70 @@ $(document).ready(function () {
 
     });
 
+
+    setTimeout(function() {
+
+        var timerIdUp = setInterval(function() {
+            var $value = $('.range-value_price').val();
+            console.log($value);
+            var $valueCount = parseInt($value) + 1000;
+            $('.range-slider__input--0, .range-value_price').val($valueCount);
+
+
+            var sliders = $(".range-slider input[type=range]")
+            for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
+                createStyleElements(rangeSliders);
+                $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
+                paintRangeTrack(rangeSliders);
+                sliders[rangeSliders].addEventListener('input', function() {
+                    for (var i=0; i < sliders.length; i++) {
+                        paintRangeTrack(i);
+                    }
+                })
+            }
+        }, 200);
+
+        setTimeout(function() {
+            clearInterval(timerIdUp);
+            //alert( 'стоп' );
+        }, 2200);
+
+    }, 2000);
+
+    setTimeout(function() {
+
+
+        var timerIdDown = setInterval(function() {
+            var $value = $('.range-value_price').val();
+            console.log($value);
+            var $valueCount = parseInt($value) - 1000;
+            $('.range-slider__input--0, .range-value_price').val($valueCount);
+
+            
+            var sliders = $(".range-slider input[type=range]")
+            for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
+                createStyleElements(rangeSliders);
+                $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
+                paintRangeTrack(rangeSliders);
+                sliders[rangeSliders].addEventListener('input', function() {
+                    for (var i=0; i < sliders.length; i++) {
+                        paintRangeTrack(i);
+                    }
+                })
+            }
+        }, 100);
+
+        setTimeout(function() {
+            clearInterval(timerIdDown);
+            //alert( 'стоп' );
+        }, 1000);
+
+    }, 4200);
+
+
+
+
+
     $(".menu_item").on("click", function(){
         $(this).siblings().removeClass("menu-active");
         $(this).addClass("menu-active");
@@ -209,4 +273,24 @@ $(document).ready(function () {
         $("#about_company").addClass("menu-active");
         $(this).addClass("menu-active-color");
     });
+
+    /*автоматическое изменение ползунков при загрузке*/
+    //$('.range-value_price')
+
+    /*появление плашки с заказами*/
+    setInterval(function(){
+
+      $('.popup-message').toggleClass('show-popup');
+        setInterval(function(){
+            $('.popup-message').toggleClass('show-popup');
+        }, 10000);
+    }, 10000);
+
+    $('.popup-message__close').on('click', function(e){
+        e.preventDefault();
+        $('.popup-message').removeClass('show-popup');
+    });
+
+
+
 });//ready end
