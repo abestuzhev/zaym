@@ -912,7 +912,8 @@ change 27-09-2017
   font-size: 79%;
   line-height: 1;
 }
-.popup-message__price-num {
+.popup-message__price-sum,
+.popup-message__price-day {
   font-size: 118%;
   font-weight: 700;
 }
@@ -967,10 +968,17 @@ change 27-09-2017
   background: none;
 }
 
-.c-stock-preview:hover {
-  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);
-  -moz-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);
-  box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);
+/*.c-stock-preview:hover {*/
+  /*-webkit-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);*/
+  /*-moz-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);*/
+  /*box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);*/
+/*}*/
+
+.sale_item {
+  border: 2px solid rgba(6,204,65,1);
+  /*-webkit-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);*/
+  /*-moz-box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);*/
+  /*box-shadow: inset 0px 0px 0px 2px rgba(6,204,65,1);*/
 }
 
 /*media*/
@@ -1004,7 +1012,7 @@ change 27-09-2017
     top: 1vw !important;
     right: 3.9vw !important;
     height: 9.9vw !important;
-    width: 9.8vw !important;
+    width: 10vw !important;
   }
 
   .stock_item:last-child {

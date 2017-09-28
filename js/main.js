@@ -198,8 +198,16 @@ $(document).ready(function () {
 
     });
 
+    /*анимация ползунков */
+
+    var $setTime = 4500;
+
+    /*время анимации up*/
+    var $intervalTimeUp = 60,
+        $timeoutTimeUp = $intervalTimeUp * 8;
 
     setTimeout(function() {
+
 
         var timerIdUp = setInterval(function() {
             var $value = $('.range-value_price').val();
@@ -219,17 +227,18 @@ $(document).ready(function () {
                     }
                 })
             }
-        }, 180);
+        }, $intervalTimeUp);
 
         setTimeout(function() {
             clearInterval(timerIdUp);
-            //alert( 'стоп' );
-        }, 2000);
+        }, $timeoutTimeUp);
 
-    }, 4000);
+    }, $setTime);
 
+    /*время анимации down*/
+    var $intervalTimeDown = 70,
+        $timeoutTimeDown = $intervalTimeDown * 9;
     setTimeout(function() {
-
 
         var timerIdDown = setInterval(function() {
             var $value = $('.range-value_price').val();
@@ -249,14 +258,88 @@ $(document).ready(function () {
                     }
                 })
             }
-        }, 100);
+        }, $intervalTimeDown);
 
         setTimeout(function() {
             clearInterval(timerIdDown);
-            //alert( 'стоп' );
-        }, 1100);
+        }, $timeoutTimeDown);
 
-    }, 6200);
+    }, $setTime + $timeoutTimeDown);
+    /*конец анимации ползунков*/
+
+
+
+
+    /*анимация ползунков срок займа*/
+
+    var $setTime = 4300;
+
+    /*время анимации up*/
+    var $intervalTimeUp = 70,
+        $timeoutTimeUp = $intervalTimeUp * 10;
+
+    setTimeout(function() {
+
+
+        var timerIdUp = setInterval(function() {
+            var $value = $('.range-value_day').val();
+            console.log($value);
+            var $valueCount = parseInt($value) + 1;
+            $('.range-slider__input--1, .range-value_day').val($valueCount);
+
+
+            var sliders = $(".range-slider input[type=range]")
+            for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
+                createStyleElements(rangeSliders);
+                $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
+                paintRangeTrack(rangeSliders);
+                sliders[rangeSliders].addEventListener('input', function() {
+                    for (var i=0; i < sliders.length; i++) {
+                        paintRangeTrack(i);
+                    }
+                })
+            }
+        }, $intervalTimeUp);
+
+        setTimeout(function() {
+            clearInterval(timerIdUp);
+        }, $timeoutTimeUp);
+
+    }, $setTime);
+
+    /*время анимации down*/
+    var $intervalTimeDown = 70,
+        $timeoutTimeDown = $intervalTimeDown * 9;
+    setTimeout(function() {
+
+        var timerIdDown = setInterval(function() {
+            var $value = $('.range-value_day').val();
+            console.log($value);
+            var $valueCount = parseInt($value) - 1;
+            $('.range-slider__input--1, .range-value_day').val($valueCount);
+
+
+            var sliders = $(".range-slider input[type=range]")
+            for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
+                createStyleElements(rangeSliders);
+                $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
+                paintRangeTrack(rangeSliders);
+                sliders[rangeSliders].addEventListener('input', function() {
+                    for (var i=0; i < sliders.length; i++) {
+                        paintRangeTrack(i);
+                    }
+                })
+            }
+        }, $intervalTimeDown);
+
+        setTimeout(function() {
+            clearInterval(timerIdDown);
+        }, $timeoutTimeDown);
+
+    }, $setTime + $timeoutTimeDown);
+    /*конец анимации ползунков*/
+
+
 
 
 

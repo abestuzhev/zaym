@@ -448,7 +448,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                             <div class="stock">
                                 <div class="stock_list">
                                     <div class="stock_item">
-                                        <div class="c-stock-preview">
+                                        <div class="c-stock-preview sale_item">
                                             <div class="c-stock-preview_header">
                                                 <div class="c-stock-preview_date">
                                                     <div class="c-stock-preview_date-number">28</div>
@@ -464,7 +464,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                         </div><!--c-stock-preview-->
                                     </div>
                                     <div class="stock_item">
-                                        <div class="c-stock-preview">
+                                        <div class="c-stock-preview sale_item">
                                             <div class="c-stock-preview_header">
                                                 <div class="c-stock-preview_date">
                                                     <div class="c-stock-preview_date-number">28</div>
@@ -476,6 +476,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                                 <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, олучат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
                                             </div>
                                             <a href="#" class="c-stock-preview_more"></a>
+                                            <div class="c-stock-preview_tag"></div>
                                         </div><!--c-stock-preview-->
                                     </div>
                                     <div class="stock_item">
@@ -485,7 +486,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                                     <div class="c-stock-preview_date-number">28</div>
                                                     <div class="c-stock-preview_date-month">август</div>
                                                 </div>
-                                                <a href="#" class="c-stock-preview_title">Пример оформления акции в несколько строк </a>
+                                                <a href="#" class="c-stock-preview_title">Пример оформления новости в несколько строк </a>
                                             </div>
                                             <div class="c-stock-preview_body">
                                                 <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
@@ -500,7 +501,7 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
                                                     <div class="c-stock-preview_date-number">28</div>
                                                     <div class="c-stock-preview_date-month">август</div>
                                                 </div>
-                                                <a href="#" class="c-stock-preview_title">Пример оформления акции в несколько строк</a>
+                                                <a href="#" class="c-stock-preview_title">Пример оформления новости в несколько строк</a>
                                             </div>
                                             <div class="c-stock-preview_body">
                                                 <div class="c-stock-preview_text">Все заемщики, получившие акционное SMS-сообщение, получат бонус 500 рублей на мобильный, если в период с 1 по 30 августа 2016...</div>
@@ -2715,7 +2716,10 @@ jQuery('.shares_container,.directory_container,.vacancies_container,.tabs_five_c
     <div class="popup-message__icon"><img src="img/icon-message.png" alt=""></div>
     <div class="popup-message__body">
         <div class="popup-message__title">Только что оформлен заём!</div>
-        <div class="popup-message__price"><span class="popup-message__price-num">15 000</span> рублей</div>
+        <div class="popup-message__price">
+            <span class="popup-message__price-sum">15 000</span> рублей
+            на <span class="popup-message__price-day">10</span> дней
+        </div>
         <div class="popup-message__text">
             <span class="popup-message__user-name">Дмитрий</span>
             <span class="popup-message__user-age">32 года</span>
