@@ -627,6 +627,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  transition: all .2s ease;
 }
 
 .range-slider__input:focus {
@@ -640,6 +641,7 @@
   color: #262F47;
   font-size: .62vw;
   font-weight: 400;
+  transition: all .2s ease;
 }
 
 .range-slider_min {
@@ -661,6 +663,7 @@
   cursor: pointer;
   background-color: #3c3c3c;
   border-radius: 2px;
+  transition: all .2s ease;
 }
 
 .range-slider__input::-webkit-slider-thumb {
@@ -677,16 +680,20 @@
   appearance: none;
   position: relative;
   z-index: 99;
+  transition: all .2s ease;
 }
 
 .range-slider__input::-webkit-slider-thumb:hover {
   background-color: #ebbb0a;
+  transition: all .2s ease;
 }
 .range-slider__input::-moz-range-thumb:hover {
   background-color: #ebbb0a;
+  transition: all .2s ease;
 }
 .range-slider__input::-ms-thumb:hover {
   background-color: #ebbb0a;
+  transition: all .2s ease;
 }
 
 
@@ -695,6 +702,7 @@
   height: .31vw;
   cursor: pointer;
   background-color: #3c3c3c;
+  transition: all .2s ease;
 }
 
 .range-slider__input::-moz-range-thumb {
@@ -709,6 +717,7 @@
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
+  transition: all .2s ease;
 }
 
 .range-slider__input::-ms-track {
@@ -722,6 +731,7 @@
   border-radius: 2px;
   appearance: none;
   overflow: auto;
+  transition: all .2s ease;
 }
 
 .range-slider__input::-ms-fill-lower {
@@ -729,6 +739,7 @@
   border-radius: 0;
   height: 2px;
   box-sizing: border-box;
+  transition: all .2s ease;
 }
 
 .range-slider__input::-ms-fill-upper {

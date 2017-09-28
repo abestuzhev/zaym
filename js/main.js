@@ -288,6 +288,7 @@ $(document).ready(function () {
             $('.range-slider__input--1, .range-value_day').val($valueCount);
 
 
+
             var sliders = $(".range-slider input[type=range]")
             for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
                 createStyleElements(rangeSliders);
@@ -299,11 +300,18 @@ $(document).ready(function () {
                     }
                 })
             }
+
+
+
+
+
         }, $intervalTimeUp);
+
 
         setTimeout(function() {
             clearInterval(timerIdUp);
         }, $timeoutTimeUp);
+
 
     }, $setTime);
 
@@ -332,9 +340,11 @@ $(document).ready(function () {
             }
         }, $intervalTimeDown);
 
+
         setTimeout(function() {
             clearInterval(timerIdDown);
         }, $timeoutTimeDown);
+
 
     }, $setTime + $timeoutTimeDown);
     /*конец анимации ползунков*/
