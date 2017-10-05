@@ -200,23 +200,22 @@ $(document).ready(function () {
 
     /*анимация ползунков */
 
-    var $setTime = 4500;
+    var $setTimeSum = 4500;
 
     /*время анимации up*/
-    var $intervalTimeUp = 60,
-        $timeoutTimeUp = $intervalTimeUp * 8;
+    var $intervalTimeUpSum = 60,
+        $timeoutTimeUpSum = $intervalTimeUpSum * 20;
 
     setTimeout(function() {
 
-
-        var timerIdUp = setInterval(function() {
+        var timerIdUpSum = setInterval(function() {
             var $value = $('.range-value_price').val();
-            console.log($value);
+            console.log('value: ' + $value);
             var $valueCount = parseInt($value) + 1000;
             $('.range-slider__input--0, .range-value_price').val($valueCount);
 
 
-            var sliders = $(".range-slider input[type=range]")
+            var sliders = $(".range-slider input[type=range]");
             for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
                 createStyleElements(rangeSliders);
                 $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
@@ -227,27 +226,30 @@ $(document).ready(function () {
                     }
                 })
             }
-        }, $intervalTimeUp);
+        }, $intervalTimeUpSum);
+
+
+
 
         setTimeout(function() {
-            clearInterval(timerIdUp);
-        }, $timeoutTimeUp);
+            clearInterval(timerIdUpSum);
+        }, $timeoutTimeUpSum);
 
-    }, $setTime);
+    }, $setTimeSum);
 
     /*время анимации down*/
-    var $intervalTimeDown = 70,
-        $timeoutTimeDown = $intervalTimeDown * 9;
-    setTimeout(function() {
+    var $intervalTimeDownSum = 60,
+        $timeoutTimeDownSum = $intervalTimeDownSum * 15;
 
-        var timerIdDown = setInterval(function() {
+    setTimeout(function() {
+        var timerIdDownSum = setInterval(function() {
             var $value = $('.range-value_price').val();
             console.log($value);
             var $valueCount = parseInt($value) - 1000;
             $('.range-slider__input--0, .range-value_price').val($valueCount);
 
 
-            var sliders = $(".range-slider input[type=range]")
+            var sliders = $(".range-slider input[type=range]");
             for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
                 createStyleElements(rangeSliders);
                 $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
@@ -258,13 +260,13 @@ $(document).ready(function () {
                     }
                 })
             }
-        }, $intervalTimeDown);
+        }, $intervalTimeDownSum);
 
         setTimeout(function() {
-            clearInterval(timerIdDown);
-        }, $timeoutTimeDown);
+            clearInterval(timerIdDownSum);
+        }, $timeoutTimeDownSum);
 
-    }, $setTime + $timeoutTimeDown);
+    }, $setTimeSum + $timeoutTimeUpSum);
     /*конец анимации ползунков*/
 
 
@@ -272,16 +274,16 @@ $(document).ready(function () {
 
     /*анимация ползунков срок займа*/
 
-    var $setTime = 4300;
+    var $setTimeDay = 4300;
 
     /*время анимации up*/
-    var $intervalTimeUp = 70,
-        $timeoutTimeUp = $intervalTimeUp * 10;
+    var $intervalTimeUpDay = 70,
+        $timeoutTimeUpDay = $intervalTimeUpDay * 20;
 
     setTimeout(function() {
 
 
-        var timerIdUp = setInterval(function() {
+        var timerIdUpDay = setInterval(function() {
             var $value = $('.range-value_day').val();
             console.log($value);
             var $valueCount = parseInt($value) + 1;
@@ -289,7 +291,7 @@ $(document).ready(function () {
 
 
 
-            var sliders = $(".range-slider input[type=range]")
+            var sliders = $(".range-slider input[type=range]");
             for (var rangeSliders=0; rangeSliders < sliders.length; rangeSliders++) {
                 createStyleElements(rangeSliders);
                 $rangeSliderElement[rangeSliders].classList.add(rangeSliderClass + rangeSliders);
@@ -300,27 +302,22 @@ $(document).ready(function () {
                     }
                 })
             }
-
-
-
-
-
-        }, $intervalTimeUp);
+        }, $intervalTimeUpDay);
 
 
         setTimeout(function() {
-            clearInterval(timerIdUp);
-        }, $timeoutTimeUp);
+            clearInterval(timerIdUpDay);
+        }, $timeoutTimeUpDay);
 
 
-    }, $setTime);
+    }, $setTimeDay);
 
     /*время анимации down*/
-    var $intervalTimeDown = 70,
-        $timeoutTimeDown = $intervalTimeDown * 9;
+    var $intervalTimeDownDay = 70,
+        $timeoutTimeDownDay = $intervalTimeDownDay * 11;
     setTimeout(function() {
 
-        var timerIdDown = setInterval(function() {
+        var timerIdDownDay = setInterval(function() {
             var $value = $('.range-value_day').val();
             console.log($value);
             var $valueCount = parseInt($value) - 1;
@@ -338,15 +335,15 @@ $(document).ready(function () {
                     }
                 })
             }
-        }, $intervalTimeDown);
+        }, $intervalTimeDownDay);
 
 
         setTimeout(function() {
-            clearInterval(timerIdDown);
-        }, $timeoutTimeDown);
+            clearInterval(timerIdDownDay);
+        }, $timeoutTimeDownDay);
 
 
-    }, $setTime + $timeoutTimeDown);
+    }, $setTimeDay + $timeoutTimeUpDay);
     /*конец анимации ползунков*/
 
 
