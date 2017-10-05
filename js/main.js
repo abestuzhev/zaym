@@ -371,9 +371,9 @@ $(document).ready(function () {
     setInterval(function(){
 
       $('.popup-message').toggleClass('show-popup');
-        setInterval(function(){
-            $('.popup-message').toggleClass('show-popup');
-        }, 10000);
+        // setInterval(function(){
+        //     $('.popup-message').toggleClass('show-popup');
+        // }, 10000);
     }, 10000);
 
     $('.popup-message__close').on('click', function(e){
